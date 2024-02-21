@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-blue-100 w-screen h-screen relative">
+    <section
+      id="app"
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2/3 h-fit min-h-2/3 bg-white rounded-xl flex flex-col justify-center items-center p-20 gap-10"
+    >
+      <h1 class="mb-auto text-4xl font-normal">☀️ 오늘의 날씨는? ☁️</h1>
+      <div class="result-cont mb-auto">
+        <p
+          id="degree-cont"
+          class="text-center text-4xl font-light flex relative"
+        >
+          <span id="degree" class="text-7xl font-bold h-full">-</span
+          ><span class="absolute right-0 translate-x-full">℃</span>
+        </p>
+        <p
+          id="description"
+          class="text-center text-http://127.0.0.1:5500/project/index.htmlxl mt-5 bg-gray-200 rounded-2xl w-fit px-6 mx-auto"
+        >
+          -
+        </p>
+      </div>
+      <div class="inp-cont">
+        <input
+          type="text"
+          id="city-inp"
+          placeholder="도시를 입력하세요"
+          class="w-auto h-full px-2 py-2"
+        />
+        <button
+          id="search-btn"
+          class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded font-bold"
+        >
+          검색
+        </button>
+      </div>
+    </section>
+    <script src="index.js">
+      
+
+    </script>
+  </body>
+</html>
